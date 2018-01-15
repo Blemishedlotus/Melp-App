@@ -7,6 +7,8 @@ import Content from './Content';
 class App extends Component {
 
   state = {
+    sortByRating: true,
+
     restaurants: [
                   {
                 "id": "851f799f-0852-439e-b9b2-df92c43e7672",
@@ -69,6 +71,8 @@ class App extends Component {
     ]
   };
 
+  toggleSorter = () =>
+    this.setState({sortByRating: !this.state.sortByRating});
 
   render() {
     return (
@@ -76,7 +80,9 @@ class App extends Component {
         <Header />
         <div className="App-content">
           <Content
+            toggleSorter = {this.toggleSorter}
             restaurants = {this.state.restaurants}
+            byRating = {this.state.sortByRating}
            />
         </div>
       </div>

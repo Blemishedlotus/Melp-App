@@ -1,11 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-
 import {Grid,
         Col,
         Row,
         Glyphicon}
         from 'react-bootstrap';
+
+import Rating from './Rating'
+
+
+
 
 const Restaurant = props => {
 
@@ -18,10 +22,7 @@ const Restaurant = props => {
             <div className="restaurant-header">
               <p className="restaurant-title">{props.name}</p>
               <div className="restaurant-rating">
-              <Glyphicon glyph="star" />
-              <Glyphicon glyph="star" />
-              <Glyphicon glyph="star" />
-              <Glyphicon glyph="star" />
+              <Rating rating={props.rating}/>
               </div>
               <hr/>
             </div>
