@@ -47,7 +47,13 @@ const Restaurant = props => {
               <li>{props.address.street}</li>
               <li>{props.address.city}</li>
               <li>{props.address.state}</li>
-              <li>Location</li>
+              <li>
+                <a href={"https://www.google.com/maps/search/api=1&query="+
+                  props.address.location.lat+","+
+                  props.address.location.lng}
+                  target="_blank">
+                  Go to Google Maps Location</a>
+              </li>
             </ul>
             </div>
           </Col>
