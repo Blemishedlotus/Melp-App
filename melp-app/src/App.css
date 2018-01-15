@@ -1,6 +1,6 @@
 .App {
   width: 100%;
-  background: #fcfcfc;
+  background: #f2f2f2;
   overflow: hidden;
 
 }
@@ -13,22 +13,28 @@
 .App-header {
   text-align: center;
   background-color: #222;
-  height: 200px;
+  height: 220px;
   padding: 20px;
   color: white;
 
 }
 
+
 .App-title {
   font-size: 1.5em;
+  font-family: 'Courgette', cursive;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, .4);
+  margin-top: 1.5em;
 }
 
 .App-subtitle {
   font-size: 1.0em;
+  margin-bottom: 1.5em;
 }
 
 .App-content {
   font-size: large;
+  font-family: 'Lato', sans-serif;
 }
 
 
@@ -91,8 +97,8 @@ ul {
 .switch {
   position: relative;
   display: inline-block;
-  width: 60px;
-  height: 34px;
+  width: 50px;
+  height: 24px;
 }
 
 .switch input {display:none;}
@@ -112,8 +118,8 @@ ul {
 .slider:before {
   position: absolute;
   content: "";
-  height: 26px;
-  width: 26px;
+  height: 16px;
+  width: 16px;
   left: 4px;
   bottom: 4px;
   background-color: white;
